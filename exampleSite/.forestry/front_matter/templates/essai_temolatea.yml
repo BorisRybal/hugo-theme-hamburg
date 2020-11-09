@@ -1,4 +1,37 @@
 ---
 label: Essai_temolateA
 hide_body: false
-fields: []
+fields:
+- name: titre
+  type: text
+  config:
+    required: false
+  label: Titre
+  description: 'Frenndhhd kudu shah '
+- name: texte_a_replir
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Texte à replir
+  description: Hdhdyeh keirie
+- name: imag1
+  type: file
+  config:
+    maxSize: 64
+  label: Imag1
+  description: Hehehhem jejeje
+- name: multi_image
+  type: image_gallery
+  config: {}
+  label: Multi image
+  description: Udjdyehb <br>
+- name: template_sous_template
+  type: include
+  config: {}
+  template: essai_temolatea
+  label: Template sous template
+  description: Hydheh
